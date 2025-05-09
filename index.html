@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오후 5시까지 남은 시간</title>
+    <title>오후 6시까지 남은 시간</title>
     <style>
         body {
             display: flex;
@@ -48,7 +48,8 @@
 </head>
 <body>
     <div class="timer">
-        <h1>🕒 오후 5시까지 남은 시간</h1>
+        <h1>🕒 오후 6시까지 남은 시간</h1>
+        <h2>민석아 화이팅</h2>
         <div class="time" id="countdown">00:00:00</div>
     </div>
     <a href="https://www.samsungcareers.com/" target="_blank" class="btn">5시가 됐다면?</a>
@@ -56,7 +57,7 @@
         function updateCountdown() {
             const now = new Date();
             const deadline = new Date();
-            deadline.setHours(17, 0, 0, 0);
+            deadline.setHours(18, 0, 0, 0);
             if (now.getHours() >= 17) {
                 deadline.setDate(deadline.getDate() + 1);
             }
