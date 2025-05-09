@@ -58,7 +58,7 @@
             const now = new Date();
             const deadline = new Date();
             deadline.setHours(18, 0, 0, 0);
-            if (now.getHours() >= 17) {
+            if (now.getHours() >= 18) {
                 deadline.setDate(deadline.getDate() + 1);
             }
             const diff = deadline - now;
